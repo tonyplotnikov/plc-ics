@@ -1,0 +1,25 @@
+VAR_GLOBAL
+    // Управляющие сигналы
+    StartAuto       : BOOL := FALSE; // Кнопка "Автомат"
+    StartManual     : BOOL := FALSE; // Кнопка "Ручной"
+    StopButton      : BOOL := FALSE; // Кнопка СТОП
+
+    // Сигналы с оборудования
+    LowLevel        : BOOL := TRUE;  // Датчик нижнего уровня
+    HighLevel       : BOOL := FALSE; // Датчик верхнего уровня
+    DryRunSensor    : BOOL := FALSE; // Сухой ход
+
+    OverheatPump1   : BOOL := FALSE;
+    OverheatPump2   : BOOL := FALSE;
+
+    ManualPump1     : BOOL := FALSE;
+    ManualPump2     : BOOL := FALSE;
+
+    ModeAuto        : BOOL := TRUE;
+
+    // Статусы насосов
+    Pump1Status     : BOOL := FALSE;
+    Pump2Status     : BOOL := FALSE;
+	CurrentModeText : STRING;
+
+END_VAR
