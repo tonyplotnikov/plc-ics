@@ -1,0 +1,18 @@
+{
+  "can": {
+    "if": "can0",
+    "speed": 1000
+  },
+  "hubs": {
+    "hub1": {
+      "url": "ur hub url"
+    }
+  },
+  "can_msg_ids": {
+    "50": {
+      "hub": "hubnumber",
+      "entity": "$GUID",
+      "param": "$PARAMNAME"
+    }
+  }
+}
