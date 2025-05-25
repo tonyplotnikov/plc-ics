@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" modified="2023-06-13T14:19:48.800Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="d4Oz5kzuHFJ4utXC_sbC" version="21.3.8" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2049" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="wmi1h-aYXYaKoJ9Sp5C9-21" value="Работа продолжается" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wmi1h-aYXYaKoJ9Sp5C9-12" target="wmi1h-aYXYaKoJ9Sp5C9-15" edge="1">
+          <mxGeometry x="0.0003" y="92" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wmi1h-aYXYaKoJ9Sp5C9-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1590" y="1950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wmi1h-aYXYaKoJ9Sp5C9-12" value="Получение данных с гироскопа" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="422.75" y="990" width="390.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wmi1h-aYXYaKoJ9Sp5C9-15" target="gNeUqT_V1DtOnu5FSzTy-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wmi1h-aYXYaKoJ9Sp5C9-15" value="&lt;br&gt;Вычисление угловой скорости относительно всех осей" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;spacingBottom=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="547.25" y="1205" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="gNeUqT_V1DtOnu5FSzTy-29" target="wmi1h-aYXYaKoJ9Sp5C9-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-29" value="Начало функции loop()" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="547.25" y="880" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-32" value="angle_y_gyro = (gyro_y_scalled * ((float)dt / 1000) + angle_y);" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;spacingLeft=-30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="813.25" y="1190" width="74" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-33" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.038;entryY=0.503;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="gNeUqT_V1DtOnu5FSzTy-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1240" as="sourcePoint" />
+            <mxPoint x="813.25" y="1214.9299999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="gNeUqT_V1DtOnu5FSzTy-35" target="gNeUqT_V1DtOnu5FSzTy-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-35" value="Вычисление угла поворота относительно всех осей" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;spacingBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="548" y="1320" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-37" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1359.57" as="sourcePoint" />
+            <mxPoint x="820" y="1359.57" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-39" value="angle_y_accel = -atan(accel_x_scalled / &lt;br&gt;(sqrt(accel_y_scalled * accel_y_scalled+ accel_z_scalled * accel_z_scalled))) * (float)rad2degree;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;spacingLeft=-30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="813.25" y="1310" width="74" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="gNeUqT_V1DtOnu5FSzTy-41" target="gNeUqT_V1DtOnu5FSzTy-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-41" value="Фильтрация значений угла поворота относительно всех осей" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;spacingBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="548" y="1450" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-42" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1479.57" as="sourcePoint" />
+            <mxPoint x="820" y="1479.57" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-43" value="angle_y = Filter_gain * angle_y_gyro + (1 - Filter_gain) * angle_y_accel;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;spacingLeft=-30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="813.25" y="1430" width="74" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="gNeUqT_V1DtOnu5FSzTy-52" target="gNeUqT_V1DtOnu5FSzTy-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-52" value="Передача угла наклона относительно оси OY в качестве входного параметра для ПИД регулятора" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;spacingBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="548" y="1570" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-53" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1599.57" as="sourcePoint" />
+            <mxPoint x="820" y="1599.57" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-54" value="input = angle_y;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;spacingLeft=-30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="813.25" y="1550" width="74" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="gNeUqT_V1DtOnu5FSzTy-56" target="gNeUqT_V1DtOnu5FSzTy-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-56" value="pid.Compute()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="558" y="1690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-58" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="683.25" y="1719.3799999999999" as="sourcePoint" />
+            <mxPoint x="813.25" y="1719.3799999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-59" value="Функция для вычисления ШИМ сигнала через полученные на вход значения текущего угла" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;spacingLeft=-30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="813.25" y="1670" width="74" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="gNeUqT_V1DtOnu5FSzTy-60" target="wmi1h-aYXYaKoJ9Sp5C9-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="1040" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="617" y="1950" />
+              <mxPoint x="330" y="1950" />
+              <mxPoint x="330" y="1050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-60" value="Передача выходного ШИМ сигнала на двигатели" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;spacingBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="547.25" y="1805" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-62" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1840" as="sourcePoint" />
+            <mxPoint x="813.25" y="1839.3799999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-63" value="int PWM = output;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;spacingLeft=-30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="813.25" y="1790" width="74" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-72" value="Работа завершена" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="830" y="1010" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-73" value="Работа продолжается" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="620" y="1120" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gNeUqT_V1DtOnu5FSzTy-74" value="Конец функции loop()" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1530" y="1950" width="140" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
